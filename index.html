@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid first">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container align-items-center">
+            <a class="navbar-brand text-white" href="#">
+              <img
+                src="WhatsApp_Image_2024-06-12_at_11.37.53_0853f1a0-removebg-preview.png"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Pakages</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="btn" id="login" type="submit">Login</button>
+                <button
+                  class="btn btn-outline text-white"
+                  type="submit"
+                  id="register"
+                >
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="box">
+        <h1>
+          The Next Great Neihborhood <br />
+          Of fort Worth with Travillin
+        </h1>
+        <h5>
+          Travel agencies that provide round trip, one way, and multi trip
+          services <br />For those of you like me who have the flexibility to
+          choose a vacation
+        </h5>
+        <button class="explore-btn">Explore Now</button>
+        <button class="view-btn">View offer</button>
+      </div>
+
+      <div class="container-fluid selection">
+        <div class="row">
+          <!-- my table accordion goes here -->
+          <div
+            class="accordion my-accordion d-flex down-col"
+            id="accordionExample"
+          >
+            <div class="accordion-item" id="my-accordion-active">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="btn fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  One Way
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" placeholder="Abu Dhabi" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" placeholder="New York" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="datetime-local" aria-dropeffect="move" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item my-accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="btn fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Round Trip
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="btn fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Multi Trip
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>From</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-location-dot"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Expected Date</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-calendar-days"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>Number of Passengers</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-user"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>To</p>
+                      <div class="position-relative">
+                        <input type="text" />
+                        <i
+                          class="my-form-icon position-absolute fa-solid fa-chair"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <p>More Options</p>
+                      <div class="position-relative">
+                        <input
+                          class="btn btn-primary"
+                          type="submit"
+                          value="Search Flight"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-three">
+      <div class="row">
+        <h2 class="text-center half-border-bottom">Why Choose Us</h2>
+        <div class="col-md-4 col-sm-12">
+          <div class="card px-3">
+            <div>
+              <i
+                class="fa-solid fa-medal"
+                style="transform: rotate(180deg)"
+              ></i>
+            </div>
+            <div class="card-body text-dark">
+              <h5 class="card-title py-5">Best Travel Agency</h5>
+              <p class="card-text text-muted py-2">
+                Travel agencies that provide round trip, one way, and multiple
+                trip services
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card px-3">
+            <div>
+              <i class="fa-solid fa-dollar-sign" style="padding: 15px 20px"></i>
+            </div>
+            <div class="card-body text-dark">
+              <h5 class="card-title py-5">Competitive price</h5>
+              <p class="card-text text-muted py-2">
+                The price offered are affordable starting from ordinary to the
+                exclusive
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card px-3">
+            <div><i class="fa-solid fa-globe"></i></div>
+            <div class="card-body text-dark">
+              <h5 class="card-title py-5">Global Coverage</h5>
+              <p class="card-text text-muted py-2">
+                There are many Tour attractions, hotels and interesting
+                entertainment
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-four p-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Global</strong> <em>Guide</em></h2>
+              <h6 class="card-subtitle mb-3">Travel and tourism llc</h6>
+              <h5>Online Travel Portal</h5>
+              <p class="card-text text-muted py-2">
+                We are best Food Maker and best Delivery restaurant to our
+                customers and find your favourite resaturants avaiable in your
+                zone. we have more than 1000 menus online. It's quick, easy and
+                totally secure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Global</strong> <em>Guide</em></h2>
+              <h6 class="card-subtitle mb-3">Travel and tourism llc</h6>
+              <h5>B2B Online Portal</h5>
+              <p class="card-text text-muted py-2">
+                We are best Food Maker and best Delivery restaurant to our
+                customers and find your favourite resaturants avaiable in your
+                zone. we have more than 1000 menus online. It's quick, easy and
+                totally secure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Global</strong> <em>Guide</em></h2>
+              <h6 class="card-subtitle mb-3">Travel and tourism llc</h6>
+              <h5>corporate travel management</h5>
+              <p class="card-text text-muted py-2">
+                We are best Food Maker and best Delivery restaurant to our
+                customers and find your favourite resaturants avaiable in your
+                zone. we have more than 1000 menus online. It's quick, easy and
+                totally secure.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Global</strong> <em>Guide</em></h2>
+              <h6 class="card-subtitle mb-3">Travel and tourism llc</h6>
+              <h5>Global Tours</h5>
+              <p class="card-text text-muted py-2">
+                We are best Food Maker and best Delivery restaurant to our
+                customers and find your favourite resaturants avaiable in your
+                zone. we have more than 1000 menus online. It's quick, easy and
+                totally secure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-five">
+      <div class="row g-4 d-flex justify-content-center">
+        <h2>Special offers</h2>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img
+              src="pexels-freestockpro-2166559.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Green Canyon Waterfall</h5>
+              <h6 class="text-end">$ 124.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Bali,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img
+              src="pexels-souvenirpixels-417074.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Ujung Jenteng Beach</h5>
+              <h6 class="text-end">$ 100.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Sukabumi,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img
+              src="pexels-stijn-dijkstra-1306815-2499791.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Api Dwiwarna Waterfall</h5>
+              <h6 class="text-end">$ 120.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Bali,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img src="pexels-tomfisk-1518723.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Pantai Kemarin Sore</h5>
+              <h6 class="text-end">$ 132.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Borneo,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img src="pexels-tomfisk-2097855.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Cikembar Waterfall</h5>
+              <h6 class="text-end">$ 128.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Bogor,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+          <div class="card text-white img-cards">
+            <img src="pexels-tomfisk-2187227.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay">
+              <div
+                class="card-heading d-flex justify-content-between align-items-center"
+              >
+                <h6 class="top bg-white">Round Trip</h6>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5 class="card-title">Dua Warna Beach</h5>
+              <h6 class="text-end">$ 118.00</h6>
+              <h6 class="text-loc">
+                <i class="fa-solid fa-location-dot"></i> Bali,Indonesia
+              </h6>
+              <button class="card-btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid six">
+      <div class="row g-5">
+        <div class="col-md-6 col-sm-12 first-col">
+          <h6 class="top bg-white">About Us</h6>
+          <h1>Explore all corners of the World with us</h1>
+          <p class="card-text py-3 text-muted">
+            We are best Food Maker and best Delivery restaurant to our customers
+            and find your favourite resaturants avaiable in your zone. we have
+            more than 1000 menus online. It's quick, easy and totally secure.
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+        <div class="col-md-6 col-sm-12 second-col">
+          <img src="pexels-rachel-claire-4846307.jpg" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-12 third-col">
+          <img src="pexels-rifkyilhamrd-788200 (1).jpg" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-12 fourth-col">
+          <h6 class="top bg-white">services</h6>
+          <h1>Explore all corners of the World with us</h1>
+          <p class="card-text text-muted py-3">
+            We are best Food Maker and best Delivery restaurant to our customers
+            and find your favourite resaturants avaiable in your zone. we have
+            more than 1000 menus online. It's quick, easy and totally secure.
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-seven">
+      <div class="row text-center px-3">
+        <h6 class="top bg-white py-3">Testimonial</h6>
+        <h3 class="py-3" style="font-weight: bold">
+          What our customers saying
+        </h3>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="card text-gray mb-3 py-3"
+            style="max-width: 25rem; height: 220px"
+          >
+            <h5>
+              <img
+                src="pexels-stijn-dijkstra-1306815-2499791.jpg"
+                alt=""
+              />Alaxender Yamin
+            </h5>
+            <p>Sukabumi Indonesia</p>
+            <div class="card-body">
+              <p class="card-text">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores qui quas atque consequuntur, quos libero! Lorem ipsum
+                dolor sit amet."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="card text-gray bg-wite mb-3 py-3"
+            style="max-width: 25rem; height: 220px"
+          >
+            <h5>
+              <img
+                src="pexels-stijn-dijkstra-1306815-2499791.jpg"
+                alt=""
+              />Alvaro kumarodin
+            </h5>
+            <p>Bandung Indonesia</p>
+            <div class="card-body">
+              <p class="card-text font-italic">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores qui quas atque consequuntur, quos libero! Lorem ipsum
+                dolor sit amet."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="card text-gray bg-white mb-3 py-3"
+            style="max-width: 25rem; height: 220px"
+          >
+            <h5>
+              <img
+                src="pexels-stijn-dijkstra-1306815-2499791.jpg"
+                alt=""
+              />Septiani Angunn
+            </h5>
+            <p>Jakarta, Indonesia</p>
+            <div class="card-body">
+              <p class="card-text font-italic">
+                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores qui quas atque consequuntur, quos libero! Lorem ipsum
+                dolor sit amet."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="last-btn">
+          <input type="button" class="review" value="View all review" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-eight">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-4 col-md-4">
+            <h4 class="name info">Travilinn.</h4>
+            <h6 class="text-muted py-3">
+              At the beginning of the year I have to <br />
+              give at work the vacation dates
+            </h6>
+            <h6 class="text-muted py-2">support@Travillinn.mail.com</h6>
+            <h6 class="text-muted py-2">023-691-456-978</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="info">Our Services</h5>
+            <h6 class="text-muted py-3">Round Trip</h6>
+            <h6 class="text-muted py-2">One Way Trip</h6>
+            <h6 class="text-muted py-2">Multi Trip</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="info">Our Products</h5>
+            <h6 class="text-muted py-3">Round Trip</h6>
+            <h6 class="text-muted py-2">One Way Trip</h6>
+            <h6 class="text-muted py-2">Multi Trip</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="info">Resources</h5>
+            <h6 class="text-muted py-3">Round Trip</h6>
+            <h6 class="text-muted py-2">One Way Trip</h6>
+            <h6 class="text-muted py-2">Multi Trip</h6>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5 class="info">Information</h5>
+            <h6 class="text-muted py-3">About us</h6>
+            <h6 class="text-muted py-2">Services</h6>
+            <h6 class="text-muted py-2">Testimonials</h6>
+          </div>
+        </div>
+        <h6 class="text-center text-muted" style="padding-top: 80px">
+          Copywright @ Global Guide 2024 All Rights Reserved
+        </h6>
+      </div>
+    </footer>
+  </body>
+</html>
